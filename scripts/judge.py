@@ -26,12 +26,13 @@ RETRY_DELAY    = 10
 COST_PER_CALL  = 0.002   # USD estimate, adjust per model
 
 # CCS weights — must sum to 1.0
+# Updated to match report.py and paper (4 levels, 0.25 each)
 CCS_WEIGHTS = {
-    "level_1_perception"    : 0.20,
-    "level_2_temporal"      : 0.20,
-    "level_3_causal_chain"  : 0.25,
-    "level_4_preventive"    : 0.15,
-    "level_5_counterfactual": 0.20,
+    "level_1_perception"    : 0.25,
+    "level_2_temporal"      : 0.25,
+    "level_3_causal_chain"  : 0.00,
+    "level_4_preventive"    : 0.25,
+    "level_5_counterfactual": 0.25,
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
