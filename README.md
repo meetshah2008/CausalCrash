@@ -4,6 +4,9 @@ This repository contains inference, judge, and reporting scripts used for the
 CausalCrash evaluation pipeline. It is intended for NeurIPS E&D review and does
 not include dataset files or model weights.
 
+- Dataset: https://huggingface.co/datasets/meet2008/CausalCrash
+- Paper: NeurIPS 2026 Evaluations & Datasets Track Submission #3454
+
 ## Contents
 
 - scripts/
@@ -113,6 +116,13 @@ Set:
 ```bash
 python scripts/report.py
 ```
+
+## Expected Output
+After running report.py, you should see:
+- Per-model scores across L1, L2, L4, L5 reasoning levels
+- Weighted CausalCrash Score (CCS) per model
+- Inter-judge disagreement and bias plots
+- Pearson correlation between GPT-4.1-mini and Gemini 2.5 Flash judges
 
 ## Notes
 
